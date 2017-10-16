@@ -1,0 +1,165 @@
+/*FURKAN DEMİR 05140000632*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}		
+
+body {
+   margin-top: 60px;     /*Kenardan 60px bosluk Birakir*/
+   font-size: initial;
+}
+
+div {
+	padding: 0;				/*Boşluk ayarı*/
+	font-size: initial;  /*Fonta var sayılan değer ataması*/
+}
+p {
+	font-size: initial;	
+}
+
+h1 {
+	font-size: 1.75em;   /*Şimdiki fontun 1.75 katı buyuklukte olucak*/
+	text-align: center;	
+	color: black;
+}
+
+.a1 {
+	float: left;		/*Sola yaslama*/
+    position: relative;
+    height: auto;
+	border: 5px solid;
+	margin-top: 20px;		/*Üstten boşluk*/
+	margin-left: 20px;		/*Soldan boşluk*/
+	overflow: auto;			/*Taşma durumunda ne yapılacağı otomatik ayar*/
+	min-width: 100px;		/*Minimum Width Minimum element genişliği*/
+	width: auto;
+	background-color: green;
+	
+
+}	
+
+.a2 {
+	float: left;		/*sola yaslama*/
+	position: relative;
+	height: auto;
+	border: 5px solid;
+	margin-top: 20px;
+	margin-left: 20px;
+	overflow: auto;
+	min-width: 100px;
+	width: auto;
+	background-color: green;
+}
+
+.a3 {
+	float: left;          /*sola yaslama*/
+	position: relative;		/*konum belirlemesi*/
+	height: auto;
+	border: 5px solid;
+	margin-top: 20px;
+	margin-left: 20px;
+	overflow: auto;
+	min-width: 100px;
+	width: auto;
+	background-color: green;
+}
+
+.meal { 
+	float: right;
+	height: auto;
+	width: 100px;						/*meal İSİMLERİNİN SAĞ ÜSTTE OLMASINI SAGLIYOR.*/
+	border-left: 5px solid;
+	border-bottom: 5px solid; 
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.a1 .meal{
+	background-color: #ee9e8d;				/*ARKA PLAN RENKLERİNİ AYARLIYOR*/
+}
+
+.a2 .meal{
+	background-color: #C70039;				/*ARKA PLAN RENKLERİNİ AYARLIYOR*/
+}
+
+.a3 .meal{
+	background-color: #eeeeb1;				/*ARKA PLAN RENKLERİNİ AYARLIYOR*/
+}
+
+.aciklama {
+	clear: both;
+	text-align: left;
+	padding: 2px;
+	font-size: initial;
+}
+
+@media (min-width: 992px) 		
+{		/*hangi pixellerde olacagını gösteriyor*/
+  .a1 {
+  	margin-left: 2.5%;
+  	margin-right: 1.25%;
+	width: 30%;							/*Büyük cihazlar için*/
+  }
+  .a2 {
+  	margin-left: 1.25%;		
+  	margin-right: 1.25%;
+	width: 30%;
+  }
+   .a3 {
+   	margin-left: 1.25%;
+   	margin-right: 2.25%;
+	width: 30%;
+  } 
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{			/*hangi pixellerde olacagını gösteriyor*/
+  .a1 {
+	width: 45%;
+	margin-left: 2.5%;
+	margin-right: 1.25%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+  }
+
+  .a2 {
+	width: 45%;								/*Tablet gibi orta boy cihazlar için*/
+	margin-left: 1.25%;
+	margin-right: 2.5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;	
+  }
+
+   .a3 {
+	width: 92.75%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) 	
+{		/*hangi pixellerde olacagını gösteriyor*/
+  .a1 {
+	width: auto;
+	max-width: 95%;
+	margin-top: 2.5;
+	margin-bottom: 0;
+	margin-left: 2.5%;
+	margin-right: 2.5%;							/*Telefon gibi kücük ekranlı cihazlar için */
+  }
+  .a2 {
+	width: auto;
+	max-width: 95%;
+	margin: 2.5%;
+  }
+   .a3 {
+	width: auto;
+	max-width: 95%;
+	margin-top: 0;
+	margin-bottom: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+  }
+}
